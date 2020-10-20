@@ -5,12 +5,12 @@
 
 if [ ! -f /data/minecraft_server.jar ]
 then
-    curl "https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar" -o /data/minecraft_server.jar
+    curl "https://github.com/Minecrell/ServerListPlus/releases/download/3.4.7/ServerListPlus-3.4.7-Server.jar" -o /data/minecraft_server.jar
 fi
 
-if [ ! -f /data/eula.txt ]
+if [ ! -f /data/ServerListPlus.yml ]
 then
-    echo "eula=true" > /data/eula.txt
+    curl "http://www.carm.ml/host/uploads/ServerListPlus.yml" -o /data/ServerListPlus.yml
 fi
 
-cd /data/; java -Xmx2G -jar minecraft_server.jar nogui
+cd /data/; java -jar minecraft_server.jar
