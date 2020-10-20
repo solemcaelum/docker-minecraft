@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------------------
-# docker-minecraft
+# docker-serverlistplus
 #
-# Builds a basic docker image that can run a Minecraft server
-# (http://minecraft.net/).
+# Builds a basic docker image that can run a ServerListPlus server
+# (https://github.com/Minecrell/ServerListPlus/).
 # -----------------------------------------------------------------------------
 
 # Base image is the latest LTS version of Ubuntu
